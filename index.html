@@ -61,6 +61,8 @@
 }
 
 .reveal .slides section {
+  background-size: cover;
+  background-position: center;
   padding: 40px 60px;
   height: 100%;
   display: flex !important;
@@ -677,6 +679,8 @@
 
 /* Slide transitions */
 .reveal .slides section {
+  background-size: cover;
+  background-position: center;
   transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -685,7 +689,9 @@
    ============================================ */
 
 @media (max-width: 900px) {
-  .reveal .slides section { padding: 24px 32px; }
+  .reveal .slides section {
+  background-size: cover;
+  background-position: center; padding: 24px 32px; }
   .split { grid-template-columns: 1fr !important; gap: 24px; }
   .card-grid.cols-3 { grid-template-columns: 1fr 1fr; }
   .uc-grid { grid-template-columns: 1fr 1fr; }
@@ -730,19 +736,15 @@
 <!-- ==========================================
      SLIDE 1: HERO / TITLE
      ========================================== -->
-<section>
+<section data-background-image="img/slide1-hero.jpg" data-background-opacity="0.15">
   <div class="split">
     <div>
       <div class="eyebrow">AI-копилот для руководителя</div>
       <h1>AI <span class="gradient-text">First</span></h1>
       <p class="lead">Система, которая объединяет данные вашего бизнеса<br>и разгружает вас от рутины</p>
     </div>
-    <div class="visual-hero">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-      <div class="grid-overlay"></div>
-      <div class="center-icon">⚡</div>
+    <div style="border-radius: var(--radius); overflow: hidden;">
+      <img src="img/slide1-hero.jpg" style="width:100%; border-radius: var(--radius); opacity: 0.8;" alt="">
     </div>
   </div>
 </section>
@@ -750,7 +752,7 @@
 <!-- ==========================================
      SLIDE 2: PROBLEM
      ========================================== -->
-<section>
+<section data-background-image="img/slide2-problem.jpg" data-background-opacity="0.15">
   <div class="split wide-left">
     <div>
       <div class="eyebrow">Проблема</div>
@@ -763,21 +765,8 @@
         <li>Много ручного труда отвлекает от главного</li>
       </ul>
     </div>
-    <div class="visual-problem">
-      <div class="node" style="top:15%;left:12%"></div>
-      <div class="node lost" style="top:28%;left:35%"></div>
-      <div class="node" style="top:55%;left:22%"></div>
-      <div class="node lost" style="top:72%;left:58%"></div>
-      <div class="node active" style="top:20%;left:72%"></div>
-      <div class="node lost" style="top:45%;left:50%"></div>
-      <div class="node" style="top:80%;left:30%"></div>
-      <div class="node lost" style="top:35%;left:80%"></div>
-      <div class="node" style="top:65%;left:75%"></div>
-      <div class="node lost" style="top:10%;left:50%"></div>
-      <div class="connection-line broken" style="top:22%;left:15%;width:120px;transform:rotate(12deg)"></div>
-      <div class="connection-line broken" style="top:50%;left:25%;width:150px;transform:rotate(-8deg)"></div>
-      <div class="connection-line broken" style="top:68%;left:35%;width:130px;transform:rotate(25deg)"></div>
-      <div class="connection-line broken" style="top:30%;left:55%;width:100px;transform:rotate(-15deg)"></div>
+    <div style="border-radius: var(--radius); overflow: hidden;">
+      <img src="img/slide2-problem.jpg" style="width:100%; border-radius: var(--radius); opacity: 0.8;" alt="">
     </div>
   </div>
 </section>
@@ -785,21 +774,10 @@
 <!-- ==========================================
      SLIDE 3: SOLUTION
      ========================================== -->
-<section>
+<section data-background-image="img/slide3-solution.jpg" data-background-opacity="0.15">
   <div class="split">
-    <div class="visual-solution">
-      <div class="ring ring-1"></div>
-      <div class="ring ring-2"></div>
-      <div class="ring ring-3"></div>
-      <div class="core"></div>
-      <div class="sat" style="top:25%;left:30%"></div>
-      <div class="sat" style="top:18%;left:60%"></div>
-      <div class="sat" style="top:45%;left:80%"></div>
-      <div class="sat" style="top:70%;left:68%"></div>
-      <div class="sat" style="top:75%;left:35%"></div>
-      <div class="sat" style="top:50%;left:15%"></div>
-      <div class="sat" style="top:35%;left:45%"></div>
-      <div class="sat" style="top:60%;left:55%"></div>
+    <div style="border-radius: var(--radius); overflow: hidden;">
+      <img src="img/slide3-solution.jpg" style="width:100%; border-radius: var(--radius); opacity: 0.8;" alt="">
     </div>
     <div>
       <div class="eyebrow">Решение</div>
@@ -813,7 +791,7 @@
 <!-- ==========================================
      SLIDE 4: WHAT WE DO (Directions)
      ========================================== -->
-<section>
+<section data-background-image="img/slide4-how-it-works.jpg" data-background-opacity="0.15">
   <div class="eyebrow">Как работает</div>
   <h2>Два режима работы</h2>
   <div class="card-grid cols-2">
@@ -833,7 +811,7 @@
 <!-- ==========================================
      SLIDE 5: USE CASES
      ========================================== -->
-<section>
+<section data-background-image="img/slide5-usecases.jpg" data-background-opacity="0.15">
   <div class="eyebrow">Применения</div>
   <h2>Что копилот делает каждый день</h2>
   <div class="uc-grid">
@@ -906,7 +884,7 @@
 <!-- ==========================================
      SLIDE 6: AUDIENCE
      ========================================== -->
-<section>
+<section data-background-image="img/slide6-audience.jpg" data-background-opacity="0.15">
   <div class="split">
     <div>
       <div class="eyebrow">Для кого</div>
@@ -942,7 +920,7 @@
 <!-- ==========================================
      SLIDE 7: HOW IT WORKS
      ========================================== -->
-<section>
+<section data-background-image="img/slide7-process.jpg" data-background-opacity="0.15">
   <div class="eyebrow">Процесс</div>
   <h2>Как работает внедрение</h2>
   <div class="steps">
@@ -976,7 +954,7 @@
 <!-- ==========================================
      SLIDE 8: WHY US
      ========================================== -->
-<section>
+<section data-background-image="img/slide8-advantages.jpg" data-background-opacity="0.15">
   <div>
     <div class="eyebrow">Преимущества</div>
     <h2>Почему <span class="gradient-text">AI First</span></h2>
@@ -1014,7 +992,7 @@
 <!-- ==========================================
      SLIDE 9: CTA
      ========================================== -->
-<section>
+<section data-background-image="img/slide9-cta.jpg" data-background-opacity="0.15">
   <div class="cta-box">
     <div class="eyebrow" style="margin: 0 auto 24px;">Тестирование</div>
     <h2>Ищем <span class="gradient-text">2 компании</span> для тестирования</h2>
@@ -1026,7 +1004,7 @@
 <!-- ==========================================
      SLIDE 10: CONTACTS
      ========================================== -->
-<section>
+<section data-background-image="img/slide10-contacts.jpg" data-background-opacity="0.15">
   <div style="text-align: center;">
     <h2 style="text-align: center;">AI <span class="gradient-text">First</span></h2>
     <p style="text-align: center; max-width: 400px; margin: 0 auto;">Операционный интеллект для бизнеса</p>
