@@ -65,6 +65,7 @@
   background-position: center;
   padding: 40px 100px;
   height: 100%;
+  overflow: hidden;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
@@ -100,6 +101,8 @@
   margin: 0;
   line-height: 1.6;
   color: var(--text-secondary);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .reveal a {
@@ -147,10 +150,11 @@
 
 /* Lead paragraph */
 .lead {
-  font-size: 1.3em;
-  line-height: 1.65;
+  font-size: 1.2em;
+  line-height: 1.55;
   color: var(--text-secondary);
-  max-width: 600px;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 /* Cards */
@@ -832,7 +836,7 @@
       <div class="eyebrow">Решение</div>
       <h2 style="font-size:1.6em;">AI-копилот, который<br><span class="gradient-text">объединяет данные</span></h2>
       <div class="divider"></div>
-      <p style="font-size:0.85em; line-height:1.5; color: var(--text-secondary);">Система подключается к задачам, документам, встречам и перепискам. Помощник для анализа и руки для рутины.</p>
+      <p style="font-size:0.8em; line-height:1.5; color: var(--text-secondary);">Подключается к задачам, документам, встречам. Анализирует и автоматизирует рутину.</p>
     </div>
   </div>
 </section>
