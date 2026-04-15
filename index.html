@@ -65,7 +65,6 @@
   background-position: center;
   padding: 40px 100px;
   height: 100%;
-  overflow: hidden;
   display: flex !important;
   flex-direction: column;
   justify-content: center;
@@ -320,7 +319,7 @@
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 32px;
+  gap: 28px;
   align-items: center;
 }
 
@@ -805,40 +804,26 @@
 <!-- ==========================================
      SLIDE 2: PROBLEM
      ========================================== -->
-<section >
-  <div class="split wide-left">
-    <div>
-      <div class="eyebrow">Проблема</div>
-      <h2 style="font-size:2.2em;">В бизнесе много данных, но <span class="gradient-text">сложно связать их воедино</span></h2>
-      <div class="divider"></div>
-      <ul class="bullet-list">
-        <li>Задачи, документы, встречи и переписки разбросаны по разным местам</li>
-        <li>Рутинные задачи съедают время, которое нужно на принятие решений</li>
-        <li>Информация есть, но нужно время чтобы её найти и сопоставить</li>
-        <li>Ручной труд отвлекает от главного</li>
-      </ul>
-    </div>
-    <div style="border-radius: var(--radius); overflow: hidden;">
-      <img src="img/slide2-problem.jpg" style="width:100%; max-height:320px; object-fit:cover; border-radius: var(--radius);" alt="">
-    </div>
-  </div>
+<section data-background-image="img/slide2-problem.jpg" data-background-opacity="0.08">
+  <div class="eyebrow">Проблема</div>
+  <h2>В бизнесе много данных, но <span class="gradient-text">сложно связать их воедино</span></h2>
+  <div class="divider"></div>
+  <ul class="bullet-list">
+    <li>Задачи, документы, встречи и переписки разбросаны по разным местам</li>
+    <li>Рутинные задачи съедают время, которое нужно на принятие решений</li>
+    <li>Информация есть, но нужно время чтобы её найти и сопоставить</li>
+    <li>Ручной труд отвлекает от главного</li>
+  </ul>
 </section>
 
 <!-- ==========================================
      SLIDE 3: SOLUTION
      ========================================== -->
-<section >
-  <div class="split">
-    <div style="border-radius: var(--radius); overflow: hidden;">
-      <img src="img/slide3-solution.jpg" style="width:100%; max-height:320px; object-fit:cover; border-radius: var(--radius);" alt="">
-    </div>
-    <div>
-      <div class="eyebrow">Решение</div>
-      <h2 style="font-size:1.6em;">AI-копилот, который<br><span class="gradient-text">объединяет данные</span></h2>
-      <div class="divider"></div>
-      <p style="font-size:0.8em; line-height:1.5; color: var(--text-secondary);">Подключается к задачам, документам, встречам. Анализирует и автоматизирует рутину.</p>
-    </div>
-  </div>
+<section data-background-image="img/slide3-solution.jpg" data-background-opacity="0.08">
+  <div class="eyebrow">Решение</div>
+  <h2>AI-копилот, который <span class="gradient-text">объединяет данные</span></h2>
+  <div class="divider"></div>
+  <p class="lead">Подключается к задачам, документам и встречам.<br>Анализирует ситуацию и автоматизирует рутину.</p>
 </section>
 
 <!-- ==========================================
